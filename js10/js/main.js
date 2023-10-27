@@ -1,43 +1,19 @@
-// conditionals: Ternary Operator
+// User input
 
-// syntax:
+// let myBoolean = confirm("Ok === True\nCancel === False")
 
-// condition ? ifTrue : ifFalse;
+// console.log(myBoolean)
 
-// let soup = "Chicken Noodle Soup";
-// let isCustomerBanned = false;
-// let soupAccess = isCustomerBanned
-//     ? "Sorry, no soup for you!"
-//     : soup
-//     ? `Yes, we have ${soup} today.`
-//     : "Sorry, no soup today"
+let myName = prompt("Please enter your name.");
 
-// console.log(soupAccess)
+if (myName) {
+    console.log(myName.length);
+    console.log(myName.trim().length);
+    console.log(myName.trim());
+    console.log(myName);
+} else {
+    console.log("You didn't enter your name")
+}
 
-// let testScore = 12;
-// let myGrade = testScore > 89
-//     ? "A"
-//     : testScore > 79
-//     ? "B"
-//     : testScore > 69
-//     ? "C"
-//     : testScore > 59
-//     ? "D"
-//     : "F";
-
-// console.log(`My test grade is a ${myGrade}.`)
-
-let playerOne = "paper";
-let computer = "rock"
-let result =
-    playerOne === computer
-        ? "Tie Game"
-        : playerOne === "rock" && computer === "paper"
-        ? "Computer wins!"
-        : playerOne === "paper" && computer === "scissors"
-        ? "Computer wins!"
-        : playerOne === "scissors" && computer === "rock"
-        ? "Computer wins!"
-        : "playerOne wins!";
-
-console.log(result)
+// ?? is the nullish coalescing operator
+// console.log(myName ?? "You didn't enter a name");
